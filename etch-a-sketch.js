@@ -1,17 +1,9 @@
-const container = document.querySelector('.container');
+const container = document.querySelector('.container')
 
-const div1 = document.createElement('div');
-div1.classList.add('square1')
-container.appendChild(div1)
-
-const div2 = document.createElement('div');
-div2.classList.add('square2')
-container.appendChild(div2)
-
-const div3 = document.createElement('div');
-div3.classList.add('square3')
-container.appendChild(div3)
-
-const div4 = document.createElement('div');
-div4.classList.add('square4')
-container.appendChild(div4)
+for (i=0; i<256; i++) {
+    const div = document.createElement('div')
+    div.style.width= '48px'
+    div.style.height = '48px'
+    div.style.border = '1px solid black'
+    container.appendChild(div)
+}
