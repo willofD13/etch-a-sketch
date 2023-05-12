@@ -6,3 +6,8 @@
     flex-direction: row;
     flex-wrap: wrap;
 }
+
+.trail {
+    background-color: black;
+    transition: all 0.1s ease;
+}
