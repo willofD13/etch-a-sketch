@@ -2,9 +2,7 @@
     margin: auto;
     width: 800px;
     height: 800px;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
+    display: grid;
 }
 
 .trail {
