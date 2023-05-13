@@ -20,8 +20,3 @@ divS.forEach(element => {
     });
 });
 
-divS.forEach(element => {
-    element.addEventListener('mouseout', () => {
-        element.classList.remove('trail');
-    })
-})
