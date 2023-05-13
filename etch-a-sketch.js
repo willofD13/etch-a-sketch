@@ -16,7 +16,7 @@ divS.forEach(element => {
 });
 
 divS.forEach(element => {
-    element.addEventListener('mouseout', () => {
+    element.addEventListener('transitionend', () => {
         element.classList.remove('trail');
     })
 })
