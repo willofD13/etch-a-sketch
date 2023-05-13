@@ -2,9 +2,10 @@ const container = document.querySelector('.container')
 
 let input = prompt('Enter your choice!', '')
 let userChoice = Number(input);
+let grid = userChoice*userChoice;
 
 
-for (i=0; i<256; i++) {
+for (i=0; i<grid; i++) {
     const div = document.createElement('div')
     div.classList.add('square')
     div.style.width= 'auto'
