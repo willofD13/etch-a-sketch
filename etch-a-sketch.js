@@ -1,10 +1,26 @@
 const container = document.querySelector('.container')
+const body = document.querySelector('body');
 
-let input = prompt('Enter your choice!', '')
-let userChoice = Number(input);
-let grid = userChoice*userChoice;
+const button = document.createElement('button');
+button.textContent= 'Click here.'
+body.appendChild(button);
+
+let input;
+let userChoice;
+let grid;
+
+function enterChoice() {
+    input = prompt('Enter your choice!', '')
+    userChoice = Number(input);
+    grid = userChoice*userChoice;
+    loop();
+}
+
+button.addEventListener('click' , enterChoice)
 
 
+
+function loop() {
 for (i=0; i<grid; i++) {
     const div = document.createElement('div')
     div.classList.add('square')
@@ -19,4 +35,4 @@ divS.forEach(element => {
         element.classList.add('trail');
     });
 });
-
+};
