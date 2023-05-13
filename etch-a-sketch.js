@@ -12,6 +12,10 @@ let grid;
 function enterChoice() {
     input = prompt('Enter your choice!', '')
     userChoice = Number(input);
+    if (userChoice>100) {
+        alert ('Sorry, there is a limit to 100 squares per side:(')
+        return;
+    }
     grid = userChoice*userChoice;
     loop();
 }
