@@ -8,8 +8,8 @@ let grid = userChoice*userChoice;
 for (i=0; i<grid; i++) {
     const div = document.createElement('div')
     div.classList.add('square')
-    div.style.width= 'auto'
-    div.style.height = 'auto'
+    container.style.gridTemplateColumns= `repeat(${userChoice}, auto)`
+    container.style.gridTemplateRows= `repeat(${userChoice}, auto)`
     div.style.border = '1px solid black'
     container.appendChild(div)
 }
