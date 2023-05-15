@@ -17,6 +17,9 @@ function enterChoice() {
         return;
     }
     grid = userChoice*userChoice;
+    while (container.firstElementChild) {
+      container,firstElementChild.remove()
+    }
     loop();
 }
 
