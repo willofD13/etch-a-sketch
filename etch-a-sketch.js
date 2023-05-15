@@ -20,26 +20,30 @@ function enterChoice() {
     while (container.firstElementChild) {
       container.firstElementChild.remove()
     }
-    loop();
+    gridMaker();
 }
 
 button.addEventListener('click' , enterChoice)
 
 
 
-function loop() {
-for (i=0; i<grid; i++) {
-    const div = document.createElement('div')
-    div.classList.add('square')
+function gridMaker() {
     container.style.gridTemplateColumns= `repeat(${userChoice}, auto)`
     container.style.gridTemplateRows= `repeat(${userChoice}, auto)`
-    div.style.border = '1px solid black'
-    container.appendChild(div)
+      for (i=0; i<grid; i++) {
+       const div = document.createElement('div')
+       div.classList.add('square')
+       div.style.border = '1px solid black'
+       container.appendChild(div)
+      }
+      trail()
 }
+
+function trail() {
 const divS = document.querySelectorAll('.square')
-divS.forEach(element => {
-    element.addEventListener('mouseover', () => {
-        element.classList.add('trail');
+    divS.forEach(element => {
+      element.addEventListener('mouseover', () => {
+         element.classList.add('trail');
+      });
     });
-});
 };
