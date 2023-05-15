@@ -42,4 +42,4 @@ divS.forEach(element => {
 };
 
 
-
+const clearButton = document.createElement('button');
