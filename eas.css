@@ -18,7 +18,3 @@ button {
     display: grid;
 }
 
-.trail {
-    background-color: black;
-    transition: all 0.1s ease;
-}
