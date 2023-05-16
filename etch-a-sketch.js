@@ -50,10 +50,13 @@ function gridMaker() {
 }
 
 function trail() {
-const divS = document.querySelectorAll('.square')
+  const divS = document.querySelectorAll('.square')
     divS.forEach(element => {
       element.addEventListener('mouseover', () => {
-         element.classList.add('trail');
+        let a = Math.floor(Math.random()*256);
+        let b = Math.floor(Math.random()*256);
+        let c = Math.floor(Math.random()*256);
+         element.style.backgroundColor = `rgb(${a}, ${b}, ${c})`
       });
     });
 };
