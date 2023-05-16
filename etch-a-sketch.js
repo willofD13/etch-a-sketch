@@ -12,6 +12,7 @@ container.style.gridTemplateRows= 'repeat(16, auto)'
        div.classList.add('square')
        div.style.border = '1px solid black'
        container.appendChild(div)
+       trail()
       }
 
 let input;
