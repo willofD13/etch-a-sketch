@@ -1,6 +1,7 @@
 body {
     display: flex;
     flex-direction: row-reverse;
+    justify-content: space-around;
 }
 
 button {
@@ -10,7 +11,7 @@ button {
 .container {
     margin-top: 100px;
     margin-left: 250px;
-    margin-right: 250px;
+    margin-right: 500px;
     margin-bottom: 100px;
     width: 600px;
     height: 600px;
