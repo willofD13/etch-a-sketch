@@ -5,6 +5,15 @@ const button = document.createElement('button');
 button.textContent= 'Click here.'
 body.appendChild(button);
 
+container.style.gridTemplateColumns= 'repeat(16, auto)'
+container.style.gridTemplateRows= 'repeat(16, auto)'
+      for (i=0; i<256; i++) {
+       const div = document.createElement('div')
+       div.classList.add('square')
+       div.style.border = '1px solid black'
+       container.appendChild(div)
+      }
+
 let input;
 let userChoice;
 let grid;
