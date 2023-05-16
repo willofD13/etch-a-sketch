@@ -52,11 +52,10 @@ function gridMaker() {
 function trail() {
   const divS = document.querySelectorAll('.square')
     divS.forEach(element => {
+      let a=0 ;
       element.addEventListener('mouseover', () => {
-        let a = Math.floor(Math.random()*256);
-        let b = Math.floor(Math.random()*256);
-        let c = Math.floor(Math.random()*256);
-         element.style.backgroundColor = `rgb(${a}, ${b}, ${c})`
+         a = a + 0.1 ;
+         element.style.backgroundColor = `rgb(0,0,0, ${a}`
       });
     });
 };
